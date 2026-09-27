@@ -40,7 +40,7 @@ class ProdukDiskon extends Produk
 }
 
 $daftar = [
-    new Produk('Keyboard', 250000, 0),
+    new Produk('Keyboard', 250000),
     new ProdukDiskon('Mouse', 150000, 10)
 ];
 
