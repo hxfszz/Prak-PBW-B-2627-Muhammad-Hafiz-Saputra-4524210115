@@ -25,12 +25,13 @@ class MahasiswaController extends BaseController
     {
         $model = new MahasiswaModel();
         $data = [
-        'nim'   => $this->request->getPost('nim'),
-        'nama'  => $this->request->getPost('nama'),
-        'email' => $this->request->getPost('email'),
-        'prodi' => $this->request->getPost('prodi'),
-        'ipk'   => $this->request->getPost('ipk'),
-    ];
+            'nim'   => $this->request->getPost('nim'),
+            'nama'  => $this->request->getPost('nama'),
+            'email' => $this->request->getPost('jenis_kelamin'),
+            'prodi' => $this->request->getPost('prodi'),
+            'angkatan' => $this->request->getPost('angkatan'),
+            'ipk'   => $this->request->getPost('ipk'),
+        ];
         $model->insert($data);
         return redirect()->to('/mahasiswa');
     }
